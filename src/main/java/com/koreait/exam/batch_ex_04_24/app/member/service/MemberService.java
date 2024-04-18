@@ -1,9 +1,7 @@
-package com.koreait.exam.batch_ex_04_24.app.service;
+package com.koreait.exam.batch_ex_04_24.app.member.service;
 
 import com.koreait.exam.batch_ex_04_24.app.member.entity.Member;
 import com.koreait.exam.batch_ex_04_24.app.member.repository.MemberRepository;
-import org.springframework.stereotype.Service;
-
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
