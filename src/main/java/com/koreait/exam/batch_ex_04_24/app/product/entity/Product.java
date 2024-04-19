@@ -13,6 +13,7 @@ import static javax.persistence.CascadeType.ALL;
 
 @Entity
 @Getter
+
 @NoArgsConstructor
 @SuperBuilder
 @ToString(callSuper = true)
