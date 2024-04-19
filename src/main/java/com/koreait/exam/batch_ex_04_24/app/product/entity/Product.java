@@ -19,6 +19,7 @@ import static javax.persistence.CascadeType.ALL;
 @ToString(callSuper = true)
 public class Product extends BaseEntity {
     private int price;
+    private int wholesalePrice;
     private String name;
     private String makerShopName;
     private boolean isSoldOut; // 관련 옵션들이 전부 판매불가 상태
@@ -30,6 +31,7 @@ public class Product extends BaseEntity {
     public void addOption(ProductOption option) {
         option.setProduct(this);
         option.setPrice(getPrice());
+        option.setWholesalePrice(getWholesalePrice());
 
         productOptions.add(option);
     }
